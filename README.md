@@ -3,12 +3,14 @@
 </center>
 
 ![./LICENSE](https://img.shields.io/github/license/habbaz-dev/github-template)
+
 # github-template
+
 🚀 GitHub template to create any project here
 
 ## Usage
-todo
 
+todo
 
 ## Contributors
 
@@ -40,5 +42,3 @@ todo
 ## License
 
 [HabbazDEV](https://github.com/habbaz-dev/) - [MIT LICENSE](https://github.com/habbaz-dev/github-template/blob/main/LICENSE) - 2024
-
-

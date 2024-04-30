@@ -1,22 +1,37 @@
 {
-    "name": "github-template",
-    "version": "0.0.1",
-    "author": "GregoireF",
-    "license": "MIT",
-    "config": {
-        "commitizen": {
-            "path": "./node_modules/@wr-projects/commitizen-config"
-        }
-    },
-    "scripts": {
-        "husky:prepare": "husky install",
-        "cz": "git cz"
-    },
-    "devDependencies": {
-        "@commitlint/cli": "^19.3.0",
-        "@wr-projects/commitizen-config": "^0.0.3",
-        "@wr-projects/commitlint-config": "^0.0.2",
-        "commitizen": "^4.3.0",
-        "husky": "^9.0.11"
+  "name": "github-template",
+  "version": "0.0.1",
+  "author": "GregoireF",
+  "license": "MIT",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/@wr-projects/commitizen-config"
     }
+  },
+  "scripts": {
+    "cz": "git cz",
+    "lint": "eslint --cache --cache-location node_modules/.eslintcache",
+    "format": "prettier --write .",
+    "precommit": "pnpm format && pnpm lint",
+    "changeset:version": "changeset version && pnpm -r generate:version && git add -all",
+    "changeset:publish": "changeset publish",
+    "lunaria:build": "lunaria build",
+    "lunaria:preview": "lunaria preview",
+    "postinstall": "husky install"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.27.1",
+    "@commitlint/cli": "^19.3.0",
+    "@wr-projects/commitizen-config": "^0.0.3",
+    "@wr-projects/commitlint-config": "^0.0.2",
+    "commitizen": "^4.3.0",
+    "eslint": "^9.1.1",
+    "eslint-config-prettier": "^9.1.0",
+    "husky": "^9.0.11",
+    "prettier": "^3.2.5"
+  },
+  "dependencies": {
+    "@lunariajs/core": "^0.0.32"
+  },
+  "packageManager": "pnpm@8.15.6"
 }

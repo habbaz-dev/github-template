@@ -3,9 +3,7 @@
   "projectOwner": "habbaz-dev",
   "repoType": "github",
   "repoHost": "https://github.com/habbaz-dev/github-template/",
-  "files": [
-    "README.md"
-  ],
+  "files": ["README.md"],
   "imageSize": 100,
   "commit": true,
   "commitConvention": "angular",
@@ -15,9 +13,7 @@
       "name": "Gregoire Favreau",
       "avatar_url": "https://avatars.githubusercontent.com/u/16638358?v=4",
       "profile": "https://github.com/GregoireF",
-      "contributions": [
-        "projectManagement"
-      ]
+      "contributions": ["projectManagement"]
     }
   ],
   "contributorsPerLine": 7,

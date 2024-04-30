@@ -2,7 +2,7 @@
 name: Pipeline - Stale
 on:
   schedule:
-    - cron: '0 0 * * *'
+    - cron: "0 0 * * *"
 
 permissions:
   contents: read
@@ -10,7 +10,6 @@ permissions:
   pull-requests: write
 
 jobs:
-
   # More info:
   stale:
     runs-on: ubuntu-latest
@@ -49,12 +48,12 @@ jobs:
           stale-pr-message: "The Pull Request has been marked as stale due to inactivity. Please show activity within 8 days or it will be automatically closed."
           close-issue-message: "The issue has been automatically closed."
           close-pr-message: "The Pull Request has been automatically closed."
-          stale-issue-label: 'status: ⌛ automatic-stale'
-          stale-pr-label: 'status: ⌛ automatic-stale'
-          close-issue-label: 'status: ✔️ automatic-closing'
-          close-pr-label: 'status: ✔️ automatic-closing'
-          exempt-issue-labels: 'status: 🆘 new-issue,status: ⌛ awaiting-review,status: ⌛ awaiting-reply,status: ⌛ in-progress,status: ⌛ in-review,status: ⌛ in-analysis,status: ⌛ research-needed,status: ✔️ approved-review,status: 📝 discussion,status: 💡 rfc,status: ❓ question,status: 🕜 relaunch-1,status: 🕜 relaunch-2,impact: ⚠️ critical,type: 🔐 security'
-          exempt-pr-labels: 'status: 🆘 new-issue,status: ⌛ awaiting-review,status: ⌛ awaiting-reply,status: ⌛ in-progress,status: ⌛ in-review,status: ⌛ in-analysis,status: ⌛ research-needed,status: ✔️ approved-review,status: 📝 discussion,status: 💡 rfc,status: ❓ question,status: 🕜 relaunch-1,status: 🕜 relaunch-2,impact: ⚠️ critical,type: 🔐 security'
+          stale-issue-label: "status: ⌛ automatic-stale"
+          stale-pr-label: "status: ⌛ automatic-stale"
+          close-issue-label: "status: ✔️ automatic-closing"
+          close-pr-label: "status: ✔️ automatic-closing"
+          exempt-issue-labels: "status: 🆘 new-issue,status: ⌛ awaiting-review,status: ⌛ awaiting-reply,status: ⌛ in-progress,status: ⌛ in-review,status: ⌛ in-analysis,status: ⌛ research-needed,status: ✔️ approved-review,status: 📝 discussion,status: 💡 rfc,status: ❓ question,status: 🕜 relaunch-1,status: 🕜 relaunch-2,impact: ⚠️ critical,type: 🔐 security"
+          exempt-pr-labels: "status: 🆘 new-issue,status: ⌛ awaiting-review,status: ⌛ awaiting-reply,status: ⌛ in-progress,status: ⌛ in-review,status: ⌛ in-analysis,status: ⌛ research-needed,status: ✔️ approved-review,status: 📝 discussion,status: 💡 rfc,status: ❓ question,status: 🕜 relaunch-1,status: 🕜 relaunch-2,impact: ⚠️ critical,type: 🔐 security"
           remove-stale-when-updated: true
           delete-branch: false
 

@@ -3,14 +3,13 @@ name: Pipeline - Pull Request
 
 on:
   pull_request:
-    types: [ opened, reopened ]
+    types: [opened, reopened]
 
 permissions:
   contents: read
   pull-requests: write
 
 jobs:
-
   # More info: https://github.com/GitGuardian/ggshield-action
   gitguardian:
     name: GitGuardian Scanner
@@ -66,13 +65,13 @@ jobs:
       - name: Dependency Review
         uses: actions/dependency-review-action@5bbc3ba658137598168acb2ab73b21c432dd411b
         with:
-          config-file: './.github/config/workflows/dependency-review.yml'
+          config-file: "./.github/config/workflows/dependency-review.yml"
 
   # More info: https://github.com/AlbertHernandez/working-label-action
   working_label:
     runs-on: ubuntu-latest
     steps:
-       # More info: https://github.com/step-security/harden-runner.
+      # More info: https://github.com/step-security/harden-runner.
       - name: Harden Runner
         id: harden_runner
         uses: step-security/harden-runner@eb238b55efaa70779f274895e782ed17c84f2895
@@ -99,8 +98,8 @@ jobs:
       - name: Working Label
         uses: AlbertHernandez/working-label-action@398809d95be33f8f631c0f02e1d0e8cd8fbf8e73
         with:
-          work_in_progress_label: 'type:🚧chore'
-          ready_to_review_label: 'status:⌛awaiting-review'
+          work_in_progress_label: "type:🚧chore"
+          ready_to_review_label: "status:⌛awaiting-review"
 
   # More info: https://github.com/pineapplelol/emojify-pr-title
   emojify-pr-title:
@@ -134,9 +133,8 @@ jobs:
       - name: Emojify PR Title
         uses: pineapplelol/emojify-pr-title@a380b02ff04e737a60066bcd0a8c45f1f7a1a709
         with:
-          use-fuzzy: false
           use-emoji-map: true
-          emoji-map: 'https://raw.githubusercontent.com/habbaz-dev/github-template/main/.github/config/workflows/emoji-mapping.json'
+          emoji-map: "https://raw.githubusercontent.com/habbaz-dev/github-template/main/.github/config/workflows/emoji-mapping.json"
           require-space: true
 
   # More info: https://github.com/hiwelo/new-dependencies-action

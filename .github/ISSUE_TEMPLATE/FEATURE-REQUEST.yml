@@ -1,11 +1,7 @@
 name: "💡 Feature Request"
 description: Create a new ticket for a new feature request
 title: "💡 [REQUEST] - <title>"
-labels: [
-  "status: 💡 rfc",
-  "status: 📝 discussion",
-  "status: ❓ question"
-]
+labels: ["status: 💡 rfc", "status: 📝 discussion", "status: ❓ question"]
 body:
   - type: input
     id: start_date

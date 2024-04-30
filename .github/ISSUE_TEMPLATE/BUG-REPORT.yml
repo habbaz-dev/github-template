@@ -1,13 +1,14 @@
 name: "🐛 Bug Report"
 description: Create a new ticket for a bug
 title: "🐛 [BUG] - <title>"
-labels: [
-  "status: 🆘 new-issue",
-  "status: 🆘 help-needed",
-  "status: ⌛ in-analysis",
-  "type: 🐛 bug",
-  "group: 💬 support"
-]
+labels:
+  [
+    "status: 🆘 new-issue",
+    "status: 🆘 help-needed",
+    "status: ⌛ in-analysis",
+    "type: 🐛 bug",
+    "group: 💬 support",
+  ]
 body:
   - type: input
     id: contact

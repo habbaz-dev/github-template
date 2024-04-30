@@ -1,3 +1,3 @@
 module.exports = {
-    extends: ['@wr-projects/commitlint-config']
+	extends: ["@wr-projects/commitlint-config"],
 };

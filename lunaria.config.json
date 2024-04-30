@@ -1,0 +1,16 @@
+{
+  "$schema": "./node_modules/@lunariajs/core/config.schema.json",
+  "repository": {
+    "name": "habbaz-dev/github-template"
+  },
+  "defaultLocale": {
+    "label": "English",
+    "lang": "en"
+  },
+  "locales": [
+    {
+      "label": "Français",
+      "lang": "fr"
+    }
+  ]
+}
