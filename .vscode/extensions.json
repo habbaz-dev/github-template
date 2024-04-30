@@ -1,0 +1,20 @@
+{
+	// See https://go.microsoft.com/fwlink/?LinkId=827846 to learn about workspace recommendations.
+	// Extension identifier format: ${publisher}.${name}. Example: vscode.csharp
+
+	// List of extensions which should be recommended for users of this workspace.
+	"recommendations": [
+		"ms-azuretools.vscode-docker",
+        "ms-vscode-remote.remote-containers",
+        "dbaeumer.vscode-eslint",
+        "Gruntfuggly.global-config",
+        "ms-vsliveshare.vsliveshare",
+        "pnp.polacode",
+        "esbenp.prettier-vscode",
+        "solidjs-community.solid-snippets",
+        "bradlc.vscode-tailwindcss",
+        "wayou.vscode-todo-highlight",
+        "EditorConfig.EditorConfig",
+        "mikestead.dotenv"
+	]
+}
