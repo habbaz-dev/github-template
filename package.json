@@ -3,20 +3,21 @@
   "version": "0.0.1",
   "author": "GregoireF",
   "license": "MIT",
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/@wr-projects/commitizen-config"
-    }
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/habbaz-dev/github-template"
   },
+  "private": true,
   "scripts": {
     "cz": "git cz",
     "lint": "eslint --cache --cache-location node_modules/.eslintcache",
-    "format": "prettier --write .",
+    "format": "prettier --write --cache \"**/*.[tj]s?(x)\"",
     "precommit": "pnpm format && pnpm lint",
     "changeset:version": "changeset version && pnpm -r generate:version && git add -all",
     "changeset:publish": "changeset publish",
     "lunaria:build": "lunaria build",
     "lunaria:preview": "lunaria preview",
+    "preinstall": "npx only-allow pnpm",
     "postinstall": "husky install"
   },
   "devDependencies": {
@@ -32,6 +33,14 @@
   },
   "dependencies": {
     "@lunariajs/core": "^0.0.32"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/@wr-projects/commitizen-config"
+    }
+  },
+  "engines": {
+    "pnpm": ">=8.15.6"
   },
   "packageManager": "pnpm@8.15.6"
 }
