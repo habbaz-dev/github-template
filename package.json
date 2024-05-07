@@ -1,5 +1,6 @@
 {
   "name": "github-template",
+  "description": "🚀 GitHub template to provide a pre-designed architecture for all types of open-source projects.",
   "version": "0.0.1",
   "author": "GregoireF",
   "license": "MIT",
@@ -8,6 +9,7 @@
     "url": "https://github.com/habbaz-dev/github-template"
   },
   "private": true,
+  "prettier": "@habbaz-dev/prettier-config",
   "scripts": {
     "cz": "git cz",
     "lint": "eslint --cache --cache-location node_modules/.eslintcache",
@@ -40,7 +42,6 @@
     }
   },
   "engines": {
-    "pnpm": ">=8.15.6"
-  },
-  "packageManager": "pnpm@8.15.6"
+    "pnpm": ">=9.0.0"
+  }
 }

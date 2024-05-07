@@ -13,6 +13,7 @@
     "esbenp.prettier-vscode",
     "solidjs-community.solid-snippets",
     "bradlc.vscode-tailwindcss",
+    "DavidAnson.vscode-markdownlint",
     "wayou.vscode-todo-highlight",
     "EditorConfig.EditorConfig",
     "mikestead.dotenv"
